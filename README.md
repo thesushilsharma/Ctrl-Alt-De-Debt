@@ -1,11 +1,16 @@
 # Ctrl-Alt-De-Debt
 Where Did My Money Go?
 
-
 ## Pre-requisites
 
 - [Node.JS 12+](https://nodejs.org/en/)
 - VS Code or any Code
+
+## Technologies Used
+- [ ] Tailwind CSS
+- [ ] Next Js
+- [ ] Typescript
+- [ ] Serverless Database (Postgresql Neon)
 
 ## Contributing
 
