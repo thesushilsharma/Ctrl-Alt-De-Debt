@@ -1,11 +1,9 @@
 # Ctrl-Alt-De-Debt
 Where Did My Money Go?
 
-This repository contains the code for a tool designed to simplify the often complex task of managing finances when dealing with various currencies, such as GBP (British Pound), AED (United Arab Emirates Dirham), NPR (Nepalese Rupee), INR (Indian Rupee), and JPY (Japanese Yen).
-
 ## Features (Planned & Implemented - Subject to Updates!)
 
-* **Multi-Currency Support:** Seamlessly input and calculate expenses and debts in GBP, AED, NPR, INR, and J
+* **Multi-Currency Support:** Seamlessly input and calculate expenses and debts in  GBP (British Pound), AED (United Arab Emirates Dirham), NPR (Nepalese Rupee), INR (Indian Rupee), and JPY (Japanese Yen).
 
 ## Pre-requisites
 
