@@ -9,6 +9,7 @@ Where Did My Money Go?
 
 - [Node.JS 12+](https://nodejs.org/en/)
 - VS Code or any Code
+- Currency conversion API
 
 ## Technologies Used
 - [ ] Tailwind CSS
