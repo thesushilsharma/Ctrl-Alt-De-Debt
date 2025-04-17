@@ -5,6 +5,16 @@ Where Did My Money Go?
 
 * **Multi-Currency Support:** Seamlessly input and calculate expenses and debts in  GBP (British Pound), AED (United Arab Emirates Dirham), NPR (Nepalese Rupee), INR (Indian Rupee), and JPY (Japanese Yen).
 
+## Installation 
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/thesushilsharma/Ctrl-Alt-De-Debt.git
+cd Ctrl-Alt-De-Debt
+npm install
+npm run dev
+```
+
 ## Pre-requisites
 
 - [Node.JS 12+](https://nodejs.org/en/)
@@ -13,9 +23,9 @@ Where Did My Money Go?
 
 ## Technologies Used
 - [ ] Tailwind CSS
-- [ ] Next Js
+- [ ] Next.js
 - [ ] Typescript
-- [ ] Serverless Database (Postgresql Neon)
+- [ ] Serverless Database (Postgresql Neon) - Mock data
 
 ## Contributing
 
@@ -25,4 +35,4 @@ To contribute to this project, please submit any issues or pull requests on the 
 
 This project is licensed under the MIT License.  See the [LICENSE](LICENSE) file for details
 
-**May your debts be few and your finances be ever in your favor!**
+**May your debts be few and your finances be ever in your favour!**
