@@ -22,10 +22,15 @@ npm run dev
 - Currency conversion API
 
 ## Technologies Used
+
 - [ ] Tailwind CSS
 - [ ] Next.js
 - [ ] Typescript
 - [ ] Serverless Database (Postgresql Neon) - Mock data
+
+## Known Issues
+
+none
 
 ## Contributing
 
