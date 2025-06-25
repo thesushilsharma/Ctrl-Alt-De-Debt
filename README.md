@@ -23,11 +23,11 @@ npm run dev
 
 ## Technologies Used
 
+- [ ] Next js
 - [ ] Tailwind CSS
-- [ ] Svelte 5 -- Need to change from Next js
 - [ ] Typescript
 - [ ] Zod
-- [ ] Serverless Database (Postgresql Neon) - Mock data
+- [ ] Postgresql Neon
 
 ## Known Issues
 
