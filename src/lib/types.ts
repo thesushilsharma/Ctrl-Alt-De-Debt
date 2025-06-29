@@ -10,3 +10,7 @@ export type Debt = {
   date: Date;
   notes?: string;
 };
+
+export type DebtWithFX = Debt & {
+  historicalNprRate: number;
+};
