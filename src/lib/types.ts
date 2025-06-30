@@ -9,8 +9,5 @@ export type Debt = {
   type: "owed_to_me" | "i_owe"
   date: Date;
   notes?: string;
-};
-
-export type DebtWithFX = Debt & {
-  historicalNprRate: number;
+  historicalNprRate?: number;
 };

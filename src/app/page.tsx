@@ -15,7 +15,7 @@ export default function Home() {
         </p>
 
         <div className="flex flex-col gap-4 w-full">
-          <Link href="/calculator" className="w-full">
+          <Link href="/summary" className="w-full">
             <button className="w-full py-3 px-6 rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:bg-indigo-500 dark:hover:bg-indigo-400">
               Go to Calculator
             </button>

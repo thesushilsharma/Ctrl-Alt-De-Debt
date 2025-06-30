@@ -19,7 +19,7 @@ npm run dev
 
 - [Node.JS 12+](https://nodejs.org/en/)
 - VS Code or any Code
-- Currency conversion API
+- Currency conversion API - Real time and Historical rates 
 
 ## Technologies Used
 

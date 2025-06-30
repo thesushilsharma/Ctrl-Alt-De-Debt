@@ -8,6 +8,7 @@ export const debtSchema = z.object({
   type: z.enum(['owed_to_me', 'i_owe']),
   date: z.date(),
   notes: z.string().max(280, 'Notes are too long').optional(),
+  historicalNprRate: z.coerce.number().positive('Amount must be a positive number.').optional(),
 });
 
 export type DeptValues = z.infer<typeof debtSchema>;
