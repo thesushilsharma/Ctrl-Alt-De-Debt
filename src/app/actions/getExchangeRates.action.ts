@@ -3,16 +3,24 @@
 import { Currency } from "@/lib/types";
 
 export async function getExchangeRates(): Promise<Partial<Record<Currency, number>>> {
-  const currencies: Currency[] = ["GBP", "NPR", "INR", "JPY"];
-  const base: Currency = "AED";
+export async function getExchangeRates(): Promise<Record<Currency, number>> {
+  const currencies: Currency[] = ["GBP", "AED", "NPR", "INR", "JPY"];
+  const target: Currency = "AED";
   
-  const rates: Partial<Record<Currency, number>> = {};
+  const rates: Record<Currency, number> = {
+  GBP: 0,
+  AED: 1,
+  NPR: 0,
+  INR: 0,
+  JPY: 0,
+};
 
-  const responses = await Promise.all(
-    currencies.map(async (currency) => {
+  const promises = currencies
+    .filter(c => c !== target)
+    .map(async (currency) => {
       try {
         const res = await fetch(
-          `https://api.coinbase.com/v2/prices/${currency}-${base}/spot`,
+          `https://api.coinbase.com/v2/prices/${currency}-${target}/spot`, // e.g. GBP-AED
           { next: { revalidate: 3600 } } // Cache for 1 hour
         );
 
@@ -23,7 +31,7 @@ export async function getExchangeRates(): Promise<Partial<Record<Currency, numbe
 
         const data = await res.json();
         const rate = parseFloat(data.data.amount);
-        if (isNaN(rate)) {
+        if (!rate) {
             return { currency, rate: null };
         }
         return { currency, rate };
@@ -31,16 +39,19 @@ export async function getExchangeRates(): Promise<Partial<Record<Currency, numbe
         console.error(`Error fetching rate for ${currency}:`, e);
         return { currency, rate: null };
       }
-    })
-  );
+    });
+
+  const results = await Promise.all(promises);
   
-  for (const res of responses) {
-      if (res.rate !== null) {
-          rates[res.currency] = res.rate;
+  for (const result of results) {
+      if (result.rate !== null) {
+          rates[result.currency as Currency] = result.rate;
+      } else {
+          // Fallback to constants if API fails
+          console.warn(`Using fallback exchange rate for ${result.currency}`);
+          rates[result.currency as Currency] = EXCHANGE_RATES_TO_AED[result.currency as Currency];
       }
   }
-
-  rates['AED'] = 1;
-
+  
   return rates;
 }
