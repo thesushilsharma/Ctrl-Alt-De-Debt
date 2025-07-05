@@ -1,8 +1,9 @@
 "use server";
 
-import { Currency } from "@/lib/types";
+import { EXCHANGE_RATES_TO_AED } from "@/lib/constant";
+import { sampleDebts } from "@/lib/mockData/sample";
+import { Currency, Debt } from "@/lib/types";
 
-export async function getExchangeRates(): Promise<Partial<Record<Currency, number>>> {
 export async function getExchangeRates(): Promise<Record<Currency, number>> {
   const currencies: Currency[] = ["GBP", "AED", "NPR", "INR", "JPY"];
   const target: Currency = "AED";
@@ -54,4 +55,9 @@ export async function getExchangeRates(): Promise<Record<Currency, number>> {
   }
   
   return rates;
+}
+
+export async function getEnrichedDebts(): Promise<Debt[]> {
+  // The sampleDebts mock data already contains the pre-calculated historical rates.
+  return Promise.resolve(sampleDebts);
 }
