@@ -1,7 +1,7 @@
 # Ctrl-Alt-De-Debt
 Where Did My Money Go?
 
-## Features (Planned & Implemented - Subject to Updates!)
+## Features
 
 * **Multi-Currency Support:** Seamlessly input and calculate expenses and debts in  GBP (British Pound), AED (United Arab Emirates Dirham), NPR (Nepalese Rupee), INR (Indian Rupee), and JPY (Japanese Yen).
 
@@ -27,7 +27,7 @@ npm run dev
 - [ ] Tailwind CSS
 - [ ] Typescript
 - [ ] Zod
-- [ ] Postgresql Neon
+- [ ] Appwrite Database, Auth
 
 ## Known Issues
 
