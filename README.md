@@ -19,11 +19,11 @@ npm run dev
 
 - [Node.JS 12+](https://nodejs.org/en/)
 - VS Code or any Code
-- Currency conversion API - Real time and Historical rates 
+- Currency conversion API - Real-time and Historical rates 
 
 ## Technologies Used
 
-- [ ] Next js
+- [ ] Next.js
 - [ ] Tailwind CSS
 - [ ] Typescript
 - [ ] Zod
