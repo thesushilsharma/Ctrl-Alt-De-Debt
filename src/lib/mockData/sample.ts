@@ -1,4 +1,4 @@
-import { Debt } from "../types";
+import type { Debt } from "../types";
 
 export const sampleDebts: Debt[] = [
   {
