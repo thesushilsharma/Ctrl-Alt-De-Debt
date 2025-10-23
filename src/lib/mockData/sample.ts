@@ -236,4 +236,67 @@ export const sampleDebts: Debt[] = [
     date: new Date("2020-12-14T00:00:00.000Z"),
     historicalNprRate: 32.2759, // AED to NPR rate for December 2020
   },
+  {
+    id: "27",
+    personName: "Purna Mama",
+    amount: 5000.0,
+    currency: "AED",
+    type: "i_owe",
+    date: new Date("2025-09-25T00:00:00.000Z"),
+    historicalNprRate: 38.5175667, // AED to NPR rate for AUG 2025
+  },
+  {
+    id: "28",
+    personName: "Purna Mama",
+    amount: 5000.0,
+    currency: "AED",
+    type: "i_owe",
+    date: new Date("2025-09-27T00:00:00.000Z"),
+    historicalNprRate: 38.5202819, // AED to NPR rate for June 2025
+  },
+  {
+    id: "29",
+    personName: "Purna Mama",
+    amount: 5000.0,
+    currency: "AED",
+    type: "i_owe",
+    date: new Date("2025-08-18T00:00:00.000Z"),
+    historicalNprRate: 37.98104, // AED to NPR rate for June 2025
+  },
+  {
+    id: "30",
+    personName: "Purna Mama",
+    amount: 5000.0,
+    currency: "AED",
+    type: "i_owe",
+    date: new Date("2025-10-22T00:00:00.000Z"),
+    historicalNprRate: 38.18264, // AED to NPR rate for OCT 2025
+  },
+  {
+    id: "31",
+    personName: "Purna Mama",
+    amount: 2441.0,
+    currency: "AED",
+    type: "i_owe",
+    date: new Date("2025-10-22T00:00:00.000Z"),
+    historicalNprRate: 38.18264, // AED to NPR rate for OCT 2025
+  },
+  {
+    id: "32",
+    personName: "Purna Mama",
+    amount: 100000.0,
+    currency: "NPR",
+    type: "i_owe",
+    date: new Date("2025-06-05T00:00:00.000Z"),
+    historicalNprRate: 1, // NPR to NPR rate for June 2025
+  },
+  {
+    id: "33",
+    personName: "Purna Mama",
+    amount: 100000.0,
+    currency: "NPR",
+    type: "i_owe",
+    date: new Date("2025-06-05T00:00:00.000Z"),
+    historicalNprRate: 1, // NPR to NPR rate for June 2025
+  },
 ];
